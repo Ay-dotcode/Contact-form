@@ -12,34 +12,67 @@
 
 <body>
   <main>
-    Contact Us
 
-    First Name
-    This field is required
+    <h1> Contact Us</h1>
+    <form>
+      <div>
+        <section>
+          <label for="first-name"> First Name <span class="required">*</span></label>
+          <input type="text" id="first-name" required>
+          <span class="error" id="fst-name-err">This field is required</span>
+        </section>
 
-    Last Name
-    This field is required
+        <section>
+          <label for="last-name"> Last Name <span class="required">*</span></label>
+          <input type="text" id="last-name" required>
+          <span class="error" id="lst-name-err">This field is required</span>
+        </section>
+      </div>
 
-    Email Address
-    Please enter a valid email address
-    This field is required
+      <section>
+        <label for="email"> Email Address<span class="required">*</span></label>
+        <input type="email" name="email" id="email" required>
+        <span class="error" id="valid-err"> Please enter a valid email address</span>
+        <span class="error" id="req-err"> This field is required</span>
+      </section>
 
-    Query Type
-    General Enquiry
-    Support Request
-    Please select a query type
+      <div>
+        <legend> Query Type<span class="required">*</span></legend>
+        <section>
+          <input type="radio" id="general-enq" name="query-type" value="general-enq" required>
+          <label for="general-enq"> General Enquiry</label>
+        </section>
+        <section>
+          <input type="radio" id="sprt-req" name="query-type" value="sprt-req" required>
+          <label for="sprt-req"> Support Request</label>
+        </section>
+        <span class="error" id="query-err"> Please select a query type</span>
+      </div>
 
-    Message
-    This field is required
+      <section>
+        <label for="msg"> Message<span class="required">*</span></label>
+        <textarea name="msg" id="msg" required></textarea>
+        <span class="error" id="msg-err"> This field is required</span>
+      </section>
 
-    I consent to being contacted by the team
-    To submit this form, please consent to being contacted
+      <section>
+        <input type="checkbox" id="consent" required>
+        <label for="consent"> I consent to being contacted by the team</label>
+        <spa class="error" id="consent-err">To submit this form, please consent to being contacted</span>
+      </section>
 
-    Submit
-
-    Message Sent!
-    Thanks for completing the form. We'll be in touch soon!
+      <button type="submit"> Submit</button>
+    </form>
   </main>
+
+  <section id="thanks">
+    <div>
+      <img src="/assets/images/icon-success-check.svg" alt="Thanks">
+      <h2> Message Sent!</h2>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </section>
+
 </body>
 
 </html>
