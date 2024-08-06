@@ -17,6 +17,19 @@ body {
 main {
     position: relative;
     background-color: white;
-    width: 580px;
+    width: 660px;
     padding: 1.5rem;
+}
+
+h1 {
+    font-size: 1.7rem;
+    color: hsl(187, 24%, 22%);
+    margin-bottom: 1.5rem;
+}
+
+.required {
+    color: hsl(169, 82%, 27%);
+    margin: 0rem .15rem;
+    font-weight: 700;
+    font-size: .9rem;
 }
