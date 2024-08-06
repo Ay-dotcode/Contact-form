@@ -27,6 +27,12 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
+label,
+legend {
+    color: hsl(187, 24%, 22%);
+    font-weight: 400;
+}
+
 .required {
     color: hsl(169, 82%, 27%);
     margin: 0rem .15rem;
