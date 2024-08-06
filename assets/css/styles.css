@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    font-family: Karla;
+}
+
+main {
+    background-color: white;
+    width: 580px;
+    padding: 1.5rem;
+}
+
+#thanks {
+    position: absolute;
+    display: none;
+}
