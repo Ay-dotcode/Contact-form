@@ -15,12 +15,8 @@ body {
 }
 
 main {
+    position: relative;
     background-color: white;
     width: 580px;
     padding: 1.5rem;
-}
-
-#thanks {
-    position: absolute;
-    display: none;
 }
