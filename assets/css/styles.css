@@ -33,6 +33,29 @@ legend {
     font-weight: 400;
 }
 
+form div {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+form div section {
+    flex-grow: 1;
+}
+
+#first-name,
+#last-name,
+#email {
+    margin-top: .3rem;
+    width: 100%;
+    display: block;
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid hsl(169, 82%, 27%);
+    border-radius: 5px;
+}
+
 .required {
     color: hsl(169, 82%, 27%);
     margin: 0rem .15rem;
