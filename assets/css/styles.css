@@ -76,7 +76,7 @@ legend {
     height: 5rem;
 }
 
-#consent-label {
+.pointer-label {
     cursor: pointer;
 }
 
@@ -91,4 +91,5 @@ legend {
     border: none;
     background-color: hsl(169, 82%, 27%);
     border-radius: 5px;
+    cursor: pointer;
 }

@@ -49,16 +49,16 @@
       <div class="block">
         <legend> Query Type<span class="required"> *</span></legend>
         <div class="row">
-          <section id="general">
+          <label id="general" for="general-enq">
             <input type="radio" id="general-enq" name="query-type" value="general-enq" required>
             <label for="general-enq" class="custom-radio"></label>
-            <label for="general-enq"> General Enquiry</label>
-          </section>
-          <section id="support">
+            <label for="general-enq" class="pointer-label"> General Enquiry</label>
+          </label>
+          <label id="support" for="sprt-req">
             <input type="radio" id="sprt-req" name="query-type" value="sprt-req" required>
             <label for="sprt-req" class="custom-radio"></label>
-            <label for="sprt-req"> Support Request</label>
-          </section>
+            <label for="sprt-req" class="pointer-label"> Support Request</label>
+          </label>
         </div>
         <p id="query-err"> Please select a query type</p>
       </div>
@@ -72,7 +72,7 @@
       <section class="block">
         <input type="checkbox" id="consent" required>
         <label for="consent" class="custom-checkbox"></label>
-        <label for="consent" id="consent-label"> I consent to being contacted by the team</label>
+        <label for="consent" class="pointer-label"> I consent to being contacted by the team</label>
         <p id="consent-err">To submit this form, please consent to being contacted</p>
       </section>
 
