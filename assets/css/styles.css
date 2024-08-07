@@ -73,3 +73,16 @@ legend {
     resize: none;
     height: 5rem;
 }
+
+#submit {
+    margin-top: .3rem;
+    width: 100%;
+    display: block;
+    padding: .9rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(148, 38%, 91%);
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 5px;
+}
