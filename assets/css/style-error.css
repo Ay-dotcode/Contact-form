@@ -4,6 +4,9 @@
     display: block;
 }
 
-.block {
-    border-color: hsl(0, 66%, 54%);
+#first-name,
+#last-name,
+#email,
+#msg {
+    border: 1.5px solid hsl(0, 66%, 54%);
 }
