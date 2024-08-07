@@ -6,7 +6,7 @@
     width: 660px;
     display: flex;
     justify-content: center;
-    /* display: none; */
+    display: none;
 }
 
 #thanks section {
