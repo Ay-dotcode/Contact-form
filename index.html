@@ -29,21 +29,21 @@
         <section class="block">
           <label for="first-name"> First Name <span class="required"> *</span></label>
           <input type="text" id="first-name" required>
-          <span class="error" id="fst-name-err">This field is required</span>
+          <p id="fst-name-err">This field is required</p>
         </section>
 
         <section class="block">
           <label for="last-name"> Last Name <span class="required"> *</span></label>
           <input type="text" id="last-name" required>
-          <span class="error" id="lst-name-err">This field is required</span>
+          <p id="lst-name-err">This field is required</p>
         </section>
       </div>
 
       <section class="block">
         <label for="email"> Email Address<span class="required"> *</span></label>
         <input type="email" name="email" id="email" required>
-        <span class="error" id="valid-err"> Please enter a valid email address</span>
-        <span class="error" id="req-err"> This field is required</span>
+        <p id="valid-err"> Please enter a valid email address</p>
+        <p id="req-err"> This field is required</p>
       </section>
 
       <div class="block">
@@ -60,20 +60,20 @@
             <label for="sprt-req"> Support Request</label>
           </section>
         </div>
-        <span class="error" id="query-err"> Please select a query type</span>
+        <p id="query-err"> Please select a query type</p>
       </div>
 
       <section class="block">
         <label for="msg"> Message<span class="required"> *</span></label>
         <textarea name="msg" id="msg" required></textarea>
-        <span class="error" id="msg-err"> This field is required</span>
+        <p id="msg-err"> This field is required</p>
       </section>
 
       <section class="block">
         <input type="checkbox" id="consent" required>
         <label for="consent" class="custom-checkbox"></label>
         <label for="consent"> I consent to being contacted by the team</label>
-        <spa class="error" id="consent-err">To submit this form, please consent to being contacted</span>
+        <p id="consent-err">To submit this form, please consent to being contacted</p>
       </section>
 
       <button type="submit" id="submit"> Submit</button>

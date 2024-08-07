@@ -1,12 +1,13 @@
-.error {
-    /* display: none; */
+p {
+    display: none;
+}
+
+.error p {
     color: hsl(0, 66%, 54%);
     display: block;
 }
 
-#first-name,
-#last-name,
-#email,
-#msg {
-    border: 1.5px solid hsl(0, 66%, 54%);
+.error input,
+.error textarea {
+    outline: 1.5px solid hsl(0, 66%, 54%);
 }
