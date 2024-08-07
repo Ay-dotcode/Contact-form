@@ -54,6 +54,7 @@ legend {
 #support,
 #msg {
     margin-top: .3rem;
+    margin-bottom: .5rem;
     width: 100%;
     display: block;
     padding: .5rem;
@@ -72,6 +73,10 @@ legend {
 #msg {
     resize: none;
     height: 5rem;
+}
+
+.custom-checkbox {
+    margin-bottom: .5rem;
 }
 
 #submit {

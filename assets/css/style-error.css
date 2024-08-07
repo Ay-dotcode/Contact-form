@@ -1,4 +1,9 @@
 .error {
-    display: none;
+    /* display: none; */
     color: hsl(0, 66%, 54%);
+    display: block;
+}
+
+.block {
+    border-color: hsl(0, 66%, 54%);
 }
