@@ -51,7 +51,8 @@ legend {
 #last-name,
 #email,
 #general,
-#support {
+#support,
+#msg {
     margin-top: .3rem;
     width: 100%;
     display: block;
@@ -68,3 +69,7 @@ legend {
     font-size: .9rem;
 }
 
+#msg {
+    resize: none;
+    height: 5rem;
+}
