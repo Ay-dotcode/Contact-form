@@ -1,0 +1,11 @@
+#first-name:focus,
+#last-name:focus,
+#email:focus,
+#general:focus,
+#support:focus,
+#msg:focus {
+    outline: 1.5px solid hsl(169, 82%, 27%);
+}
+input[type="radio"]:checked:focus{
+    background-color: red;
+}
