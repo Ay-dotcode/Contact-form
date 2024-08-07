@@ -68,10 +68,3 @@ legend {
     font-size: .9rem;
 }
 
-#general-enq,
-#sprt-req {
-    width: 1rem;
-    height: 1rem;
-    vertical-align: text-top;
-    margin-right: .3rem;
-}

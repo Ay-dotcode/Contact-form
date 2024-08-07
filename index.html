@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <title>Contact form</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles-input-radio.css">
   <link rel="stylesheet" href="/assets/css/style-thanks.css">
   <link rel="stylesheet" href="/assets/css/style-error.css">
   <link rel="stylesheet" href="/assets/css/style-mobile.css">
@@ -47,12 +48,13 @@
         <legend> Query Type<span class="required"> *</span></legend>
         <div class="row">
           <section id="general">
-            <!-- <img src="/assets/images/icon-radio-selected.svg" alt=""> -->
             <input type="radio" id="general-enq" name="query-type" value="general-enq" required>
+            <label for="general-enq" class="custom-radio"></label>
             <label for="general-enq"> General Enquiry</label>
           </section>
           <section id="support">
             <input type="radio" id="sprt-req" name="query-type" value="sprt-req" required>
+            <label for="sprt-req" class="custom-radio"></label>
             <label for="sprt-req"> Support Request</label>
           </section>
         </div>

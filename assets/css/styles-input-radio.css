@@ -1,0 +1,27 @@
+/* Hide the original radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Create a custom radio button */
+.custom-radio {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    vertical-align: text-top;
+    margin-right: .3rem;
+}
+
+input[type="radio"]:checked+.custom-radio {
+    border-color: transparent;
+    background-image: url("/assets/images/icon-radio-selected.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1.45rem;
+    height: 1.45rem;
+    margin-right: 0.1rem;
+}
