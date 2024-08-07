@@ -1,0 +1,51 @@
+/* Hide the original radio and checkbox button */
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Create a custom radio button */
+.custom-radio {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    vertical-align: text-top;
+    margin-right: .3rem;
+}
+
+input[type="radio"]:checked+.custom-radio {
+    border-color: transparent;
+    background-image: url("/assets/images/icon-radio-selected.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1.45rem;
+    margin-right: 0.1rem;
+}
+
+/* Create a custom checkbox */
+.custom-checkbox {
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    vertical-align: text-top;
+    margin-right: .3rem;
+}
+
+/* Show the image when checked */
+input[type="checkbox"]:checked+.custom-checkbox {
+    border-color: transparent;
+    background-image: url("/assets/images/icon-checkbox-check.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1.3rem;
+    margin-right: 0.1rem;
+}
