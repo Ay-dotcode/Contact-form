@@ -4,9 +4,9 @@
     left: 0px;
     transform: translateY(-100%);
     width: 660px;
-    display: flex;
     justify-content: center;
     display: none;
+    /* display: flex; */
 }
 
 #thanks section {
@@ -31,4 +31,5 @@
 #thanks p {
     font-size: 0.9rem;
     color: hsla(0, 0%, 100%, 0.9);
+    display: block;
 }
