@@ -3,23 +3,21 @@ import { query } from "./query-type.js";
 const main = document.querySelector('main');
 const blocks = main.querySelectorAll('.block');
 const submit = main.querySelector('#submit');
+let noError = true;
 
 general.addEventListener('click', query);
 support.addEventListener('click', query);
 
 blocks.forEach(block => {
-    block.addEventListener('click', () => {
-        block.classList.remove('error');
-    });
+    block.addEventListener('click', reset);
+    noError = true;
 });
 
-function thank() {
-    const thanks = main.querySelector('#thanks');
+submit.addEventListener('click', e => {
     e.preventDefault();
-    console.log('submit');
-    main.style.marginTop = '7rem'
-    thanks.style.display = 'flex';
-}
+    validate();
+    if (noError) thank();
+});
 
 function validate() {
     const firstName = document.querySelector('#first-name');
@@ -32,11 +30,13 @@ function validate() {
     // Validate first name
     if (firstName.value.trim() === '') {
         blocks[0].classList.add('error');
+        noError = false;
     }
 
     // Validate last name
     if (lastName.value.trim() === '') {
         blocks[1].classList.add('error');
+        noError = false;
     }
 
     // Validate email
@@ -44,10 +44,15 @@ function validate() {
         blocks[2].classList.add('error');
         blocks[2].childNodes[5].style.display = 'none';
         blocks[2].childNodes[7].style.display = 'block';
+        noError = false;
     } else if (!isValidEmail(email.value)) {
         blocks[2].classList.add('error');
         blocks[2].childNodes[7].style.display = 'none';
         blocks[2].childNodes[5].style.display = 'block';
+        noError = false;
+    } else {
+        console.log(blocks[2].childNodes[7]);
+        console.log(blocks[2].childNodes[5]);
     }
 
     // Validate radio buttons
@@ -58,18 +63,19 @@ function validate() {
     });
     if (!isRadioButtonChecked) {
         blocks[3].classList.add('error');
+        noError = false;
     }
 
     // Validate textarea
     if (textarea.value.trim() === '') {
-        // Display error message for empty textarea
-        // Example: textareaError.textContent = 'Message is required';
+        blocks[4].classList.add('error');
+        noError = false;
     }
 
     // Validate checkbox
     if (!checkbox.checked) {
-        // Display error message for unchecked checkbox
-        // Example: checkboxError.textContent = 'Please accept the terms and conditions';
+        blocks[5].classList.add('error');
+        noError = false;
     }
 }
 
@@ -77,4 +83,16 @@ function isValidEmail(email) {
     // Use a regular expression to validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
+}
+
+function thank() {
+    const thanks = main.querySelector('#thanks');
+    console.log('submit');
+    main.style.marginTop = '7rem'
+    thanks.style.display = 'flex';
+}
+function reset() {
+    blocks.forEach(block => {
+        block.classList.remove('error');
+    });
 }
