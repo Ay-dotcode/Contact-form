@@ -35,6 +35,8 @@ submit.addEventListener('click', e => {
 
 function thank() {
     const thanks = main.querySelector('#thanks');
-    main.style.marginTop = '7rem'
+    // Adjust margin-top for bigger screens
+    if (window.innerWidth > 45 * parseFloat(getComputedStyle(document.documentElement).fontSize))
+        main.style.marginTop = '7rem';
     thanks.style.display = 'flex';
 }

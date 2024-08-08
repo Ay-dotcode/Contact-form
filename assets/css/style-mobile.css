@@ -1,0 +1,22 @@
+@media (max-width: 45em) {
+    main {
+        width: 375px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #msg {
+        height: 7rem;
+    }
+
+    #thanks {
+        padding-top: .5rem;
+        width: 375px;
+        top: auto;
+        bottom: 0;
+        transform: translateY(100%);
+    }
+}
