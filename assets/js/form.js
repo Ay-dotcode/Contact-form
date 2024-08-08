@@ -11,14 +11,14 @@ support.addEventListener('click', query);
 blocks.forEach(block => {
     block.addEventListener('click', () => {
         block.classList.remove('error');
+        noError = true;
     });
 });
+// Remove error message from email when user starts typing
 blocks[2].addEventListener('click', () => {
     blocks[2].childNodes[5].style.display = 'none';
     blocks[2].childNodes[7].style.display = 'none';
-    noError = true;
 });
-
 submit.addEventListener('click', e => {
     e.preventDefault();
     validate();
@@ -93,7 +93,6 @@ function isValidEmail(email) {
 
 function thank() {
     const thanks = main.querySelector('#thanks');
-    console.log('submit');
     main.style.marginTop = '7rem'
     thanks.style.display = 'flex';
 }
