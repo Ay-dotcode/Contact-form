@@ -1,4 +1,8 @@
 @media (max-width: 45em) {
+    body {
+        display: block;
+    }
+
     main {
         width: 375px;
     }
@@ -13,7 +17,7 @@
     }
 
     #thanks {
-        padding-top: .5rem;
+        padding: .5rem 0;
         width: 375px;
         top: auto;
         bottom: 0;
