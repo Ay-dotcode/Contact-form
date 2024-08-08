@@ -9,7 +9,13 @@ general.addEventListener('click', query);
 support.addEventListener('click', query);
 
 blocks.forEach(block => {
-    block.addEventListener('click', reset);
+    block.addEventListener('click', () => {
+        block.classList.remove('error');
+    });
+});
+blocks[2].addEventListener('click', () => {
+    blocks[2].childNodes[5].style.display = 'none';
+    blocks[2].childNodes[7].style.display = 'none';
     noError = true;
 });
 
@@ -51,8 +57,8 @@ function validate() {
         blocks[2].childNodes[5].style.display = 'block';
         noError = false;
     } else {
-        console.log(blocks[2].childNodes[7]);
-        console.log(blocks[2].childNodes[5]);
+        blocks[2].childNodes[7].style.display = 'none';
+        blocks[2].childNodes[5].style.display = 'none';
     }
 
     // Validate radio buttons
@@ -90,9 +96,4 @@ function thank() {
     console.log('submit');
     main.style.marginTop = '7rem'
     thanks.style.display = 'flex';
-}
-function reset() {
-    blocks.forEach(block => {
-        block.classList.remove('error');
-    });
 }
