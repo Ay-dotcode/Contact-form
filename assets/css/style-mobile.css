@@ -1,6 +1,7 @@
 @media (max-width: 45em) {
     body {
         display: block;
+        background-color: white;
     }
 
     main {
@@ -17,7 +18,7 @@
     }
 
     #thanks {
-        padding: .5rem 0;
+        padding: .7rem 0;
         width: 375px;
         top: auto;
         bottom: 0;
